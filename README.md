@@ -14,7 +14,7 @@
 - 2). Running within the 'main' method
 
 # Running from CLI (*recommended)
-- To run in CLI, open the CLI (Ctrl + `) and change directory to LinkedList/src
+- To run in CLI, open the CLI (Windows/macOS/Unix: Ctrl + `) and change directory to LinkedList/src
 - Enter 'java LinkedListApp'
 
 # Running from 'main' method (*not recommended)
