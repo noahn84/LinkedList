@@ -4,14 +4,15 @@
 - Searching: O(n) // will have to search n/2 on average (n = # of items in linked list) (linear time)
 - O(n) time | O(n) space
 
-# How to view the LinkedListApp in VSCode
-- If you want to see the code under the hood, open src/LinkedListApp.java
+# How to view the code 'under the hood'
+- If you want to see the code under LinkedListApp, open the src/LinkedListApp.java file
 - PS: (Don't worry about the other files located in /src. Those were created upon initial compilation)
 
 # How to run LinkedListApp
 - There are two ways to run the app in VSCode:
 - 1). Running in the CLI
 - 2). Running within the 'main' method
+- IMPORTANT: I've compiled the java program prior to uploading to GitHub, so no need to compile (check /bin/)
 
 # Running from CLI (*recommended)
 - To run in CLI, open the CLI (Windows/macOS/Unix: Ctrl + `) and change directory to LinkedList/src
