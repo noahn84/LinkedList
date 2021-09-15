@@ -15,7 +15,7 @@
 - IMPORTANT: I've compiled the java program prior to uploading to GitHub, so no need to compile (check /bin/)
 
 # Running from CLI (*recommended)
-- To run in CLI, open the CLI (Ctrl + `) and change directory to LinkedList/src
+- To run in CLI, open the CLI (Windows/macOS/Unix: Ctrl + `) and change directory to LinkedList/src
 - Enter 'java LinkedListApp'
 
 # Running from 'main' method (*not recommended)
