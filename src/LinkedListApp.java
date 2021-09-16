@@ -43,11 +43,42 @@ class LinkList
         first = newLink;
     }
 
-    public Link deleteFirst()
+    public Link find(int key)
     {
-        Link temp = first;
-        first = first.next;
-        return temp;
+        Link current = first;
+        while (current.iData != key)
+        {
+            if (current.next == null)
+            {
+                return null;
+            } else {
+                current = current.next;
+            }
+        }
+        return current;
+    }
+
+    public Link delete(int key)
+    {
+        Link current = first;
+        Link previous = first;
+        while (current.iData != key)
+        {
+            if (current == null)
+            {
+                return null;
+            } else {
+                previous = current;
+                current = current.next;
+            }
+        }
+        if (current == first)
+        {
+            first = first.next;
+        } else {
+            previous.next = current.next;
+        }
+        return current;
     }
 
     public void displayList()
@@ -88,14 +119,20 @@ class LinkedListApp
         // display newly filled linked list
         myList.displayList();
 
-        // until the linked list is empty....
-        while (!myList.isEmpty())
+        Link f = myList.find(3);
+        if (f!=null)
         {
-            // ....delete first link, and display deleted link
-            Link aLink = myList.deleteFirst();
-            System.out.print("Deleted ");
-            aLink.displayLink();
-            System.out.println("");
+            System.out.println("Found link with key " + f.iData);
+        } else {
+            System.out.println("Can't find link");
+        }
+
+        Link d = myList.delete(4);
+        if (d!=null)
+        {
+            System.out.println("Deleted link with key " + d.iData);
+        } else {
+            System.out.println("Can't find link");
         }
 
         // display empty linked list
